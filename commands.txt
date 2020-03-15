@@ -1,0 +1,5 @@
+USEFUL COMMANDS:
+    Update the kernal: prosv5 c u
+    Make all: prosv5 make all
+    Upload to slot #: prosv5 upload --slot #
+    Quick make and upload to default slot(1): prosv5 mu

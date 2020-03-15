@@ -1,0 +1,55 @@
+/*
+MachineState FSM[] = 
+    {
+        MachineState(State::DriveForwardV, StateType::Brake, 100, 250),
+        MachineState(State::OpenSeq, true),
+        MachineState(State::DriveTime, StateType::Brake, -20, 600),
+        MachineState(State::IntakeSet, StateType::Ignore, 127),
+        MachineState(State::DriveForwardV, StateType::Coast, 150, 150),
+        MachineState(State::DriveForwardV, StateType::Coast, 250, 800),
+        MachineState(State::DriveForwardV, StateType::Brake, 135, 650),
+        MachineState(State::DriveForwardV, StateType::Brake, 40, 50),
+        MachineState(State::ArmUp, StateType::Ignore, 125, 300, 5),//1100
+        MachineState(State::ArmSet, StateType::Ignore, 65, 2),
+        MachineState(State::DriveForwardV, StateType::Brake, 70, 230),
+        MachineState(State::DriveBackwardV, StateType::Brake, 100, 200),
+        MachineState(State::ArmSet, StateType::Ignore, 0, 1),
+        MachineState(State::DriveForwardV, StateType::Brake, 150, 500),
+        MachineState(State::SwerveBackwardGyroRV, StateType::Ignore, 162, 312, 640), //130 250 * 1.25
+        MachineState(State::SwerveBackwardGyroLV, StateType::Brake, 312, 162, 10), //250 130 * 1.25
+        MachineState(State::DriveTime, StateType::Brake, -60, 300),
+        MachineState(State::DriveForward, StateType::Coast, 80, 400),
+        MachineState(State::DriveForward, StateType::Brake, 30, 1900),
+        MachineState(State::DriveBackwardV, StateType::Coast, 50, 50),
+        MachineState(State::DriveBackwardV, StateType::Coast, 350, 650),
+        MachineState(State::DriveBackwardV, StateType::Brake, 200, 300),
+        MachineState(State::DriveTime, StateType::Ignore, 10, 300),
+        MachineState(State::IntakeSet, StateType::Ignore, 20),
+        MachineState(State::TowerSet, StateType::Ignore, 55),
+        MachineState(State::TurnTo, StateType::Coast, 60, -1350, 2000),
+        MachineState(State::TowerSet, StateType::Ignore, 20),
+        MachineState(State::DriveTime, StateType::Brake, 70, 1000),
+        MachineState(State::DriveSet, StateType::Ignore, 20),
+        MachineState(State::IntakeSet, StateType::Ignore, -50),
+        MachineState(State::TowerUp, StateType::Ignore, 17, 1690, 1200),
+        MachineState(State::DriveSet, StateType::Ignore, 40),
+        MachineState(State::IntakeSet, StateType::Ignore, 60),
+        MachineState(State::TowerUp, StateType::Ignore, 17, 1690, 1600),
+        MachineState(State::TowerSet, StateType::Ignore, -127),
+        MachineState(State::DriveBackwardV, StateType::Brake, 200, 500),
+        MachineState(State::IntakeSet, StateType::Ignore, 0),
+        MachineState(State::TowerSet, StateType::Ignore, 0),
+        MachineState(State::DriveTime, StateType::Ignore, 0, 500),
+        MachineState(State::TurnTo, StateType::Coast, 20, -2700, 3000),
+        MachineState(State::DriveTime, StateType::Ignore, 0, 300),
+        MachineState(State::DriveTime, StateType::Ignore, -60, 500),
+        MachineState(State::DriveTime, StateType::Brake, -30, 1000),
+        MachineState(State::IntakeSet, StateType::Ignore, 127),
+        MachineState(State::DriveForwardV, StateType::Coast, 150, 150),
+        MachineState(State::DriveForwardV, StateType::Coast, 250, 1900),
+        MachineState(State::DriveForwardV, StateType::Brake, 135, 650),
+        MachineState(State::DriveForwardV, StateType::Brake, 40, 50),
+
+        MachineState(State::Idle)
+    };
+*/
